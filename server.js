@@ -67,11 +67,19 @@ app.get("/", (req, res) => {
     });
 });
 
-// Help
+// About
 app.get("/about", (req, res) => {
     res.render("index", {
         title: "about stuff",
         paragraph: "Something about us and our stuff."
+    });
+});
+
+// Projects
+app.get("/projects", (req, res) => {
+    res.render("projects", {
+        title: "projects",
+        paragraph: "Collection of projects."        
     });
 });
 
