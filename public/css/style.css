@@ -1,0 +1,60 @@
+/* Base ----- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: 1.1em "Muli", sans-serif;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Container ----- */
+
+.container {
+    display: flex;
+    width: 95%;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 1em;
+    border-radius: 0.3em;
+    margin: 40px auto;
+    background: linear-gradient(145deg, #5f136e, #460e52);
+    color: #fff;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Header ----- */
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+}
+
+nav li {
+    font-size: 1.3em;
+    font-weight: 700;
+    list-style: none;
+}
+
+nav li:not(:last-of-type) {
+    margin-right: 1em;
+}
+
+nav a {
+    color: #3dc8ff;
+    text-decoration: none;
+    transition: color 0.3s ease-out;
+}
+
+nav a:hover {
+    color: #2fa8d8;
+}
+
+/* Main ----- */
+
+main {
+    text-align: center;
+}
