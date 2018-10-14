@@ -11,9 +11,10 @@ body {
 
 /* Container ----- */
 
-.container {
+.container-fluid {
     display: flex;
     width: 95%;
+    max-width: 1000px;
     flex-flow: column nowrap;
     align-items: center;
     padding: 1em;
@@ -26,15 +27,27 @@ body {
 
 /* Header ----- */
 
+header {
+    width: 90%;
+}
+
 header h1 {
     text-align: center;
 }
 
 nav ul {
     display: flex;
+    height: 100%;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     padding-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+    nav ul {
+        justify-content: flex-end;
+    }
 }
 
 nav li {
@@ -57,8 +70,26 @@ nav a:hover {
     color: #2fa8d8;
 }
 
-/* Main ----- */
+/* Section ----- */
 
 section {
+    text-align: center;
+}
+
+/* Main ----- */
+
+main {
+    width: 90%;
+}
+
+/* Projects ----- */
+
+#projects {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.project {
     text-align: center;
 }
